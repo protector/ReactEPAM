@@ -1,2 +1,0 @@
-# ReactEPAM
-React EPAM Course
