@@ -3,10 +3,18 @@
     "es2015",
     "stage-2",
     "react",
-    "env"
+    ["env", {
+      "targets": {
+        "browsers": [
+          "> 1%",
+          "last 2 versions"
+        ]
+      }
+    }]
   ],
   "plugins": [
     "transform-runtime",
-    "transform-class-properties"
+    "transform-class-properties",
+    "syntax-dynamic-import"
   ]
 }
