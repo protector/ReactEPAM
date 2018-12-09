@@ -53,6 +53,15 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif)$/,
         loader: 'url-loader?limit=8000&name=images/[name].[ext]'
+      },
+      {
+        test: /\.less$/,
+        exclude: /node_modules/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'less-loader' }
+        ]
       }
     ]
   },
