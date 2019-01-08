@@ -1,7 +1,6 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
 
 module.exports = {
   devtool: 'cheap-module-source-map',
@@ -54,6 +53,21 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif)$/,
         loader: 'url-loader?limit=8000&name=images/[name].[ext]'
+      },
+      {
+        test: /\.less$/,
+        exclude: /node_modules/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: true,
+              loacalIdentName: '[name]__[local]__[hash:base64:5]'
+            }
+          },
+          { loader: 'less-loader' }
+        ]
       }
     ]
   },
@@ -63,5 +77,6 @@ module.exports = {
       filename: 'index.html',
       inject: 'body'
     })
-  ]
+  ],
+  mode: 'production'
 };

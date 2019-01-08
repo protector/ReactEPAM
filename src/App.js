@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
-import Search from './containers/Search/Search';
+import Header from './containers/Header/Header';
+import ResultBar from './components/ResultBar/ResultBar';
+//import Results from './containers/Results/Results';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>Netflixroulette</h1>
-        <Search title="Find your movie" button={'Search'} placeholder={'Search for a movie'} />
+        <Header />
+        <ResultBar />
       </div>
     )
   }

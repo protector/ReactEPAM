@@ -59,7 +59,13 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           { loader: 'style-loader' },
-          { loader: 'css-loader' },
+          { loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: true,
+              loacalIdentName: '[name]__[local]__[hash:base64:5]'
+            }
+          },
           { loader: 'less-loader' }
         ]
       }
@@ -71,5 +77,6 @@ module.exports = {
       filename: 'index.html',
       inject: 'body'
     })
-  ]
+  ],
+  mode: 'development'
 };
