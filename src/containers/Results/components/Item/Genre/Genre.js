@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Genre.less';
 
-const genre = (props) => {
+const genre = props => {
   return (
     <div className={classes.Genre}>
       {props.genre}

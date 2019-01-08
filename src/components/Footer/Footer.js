@@ -2,10 +2,10 @@ import React from 'react';
 import classes from './Footer.less';
 import Logo from '../Logo/Logo';
 
-const footer = (props) => {
+const footer = props => {
   return (
 		<div className={classes.Footer}>
-      <Logo page='info' />
+      	<Logo page='info' />
 		</div>
 	)
 };

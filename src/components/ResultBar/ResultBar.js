@@ -4,7 +4,7 @@ import ResultCounter from './ResultCounter/ResultCounter';
 import ResultSort from './ResultSort/ResultSort';
 import ResultGenre from './ResultGenre/ResultGenre';
 
-const resultbar = (props) => {
+const resultbar = props => {
   const resultText = 'movies found',
         resultValue = '7',
 				sortTitle = 'Sort by',

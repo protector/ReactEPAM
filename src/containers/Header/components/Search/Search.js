@@ -4,7 +4,7 @@ import Field from './Field/Field';
 import Button from './Button/Button';
 import Filter from './Filter/Filter';
 
-const search = (props) => {
+const search = props => {
 	const fieldTitle = 'find your movie',
 				filterTitle = 'search by',
 				filterTypes = [{title: 'title', selected: true}, {title: 'genre', selected: false}],

@@ -5,7 +5,7 @@ import Release from './Release/Release';
 import Title from './Title/Title';
 import Genre from './Genre/Genre';
 
-const items = (props) => {
+const items = props => {
   return (
 		<div className={classes.Item}>
       <Image image={props.image} />

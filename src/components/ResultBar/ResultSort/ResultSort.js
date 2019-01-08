@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './ResultSort.less';
 
-const resultsort = (props) => {
+const resultsort = props => {
 	const sortby = props.sorttypes.map((sort, index) => {
 		let sortbyClass = classes.sortby;
 		if(sort.selected){

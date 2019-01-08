@@ -7,7 +7,7 @@ import Rating from './Rating/Rating';
 import Stats from './Stats/Stats';
 import Description from './Description/Description';
 
-const filminfo = (props) => {
+const filminfo = props => {
   const buttonTitle = 'search',
         infoTitle= 'CHASING CORAL',
         subTitle= 'Satellite Award Movies',

@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Filter.less';
 
-const filter = (props) => {
+const filter = props => {
 	const buttons = props.filtertypes.map((filter, index) => {
 		let btnClass = classes.button;
 		if(filter.selected){

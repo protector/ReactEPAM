@@ -4,7 +4,7 @@ import Logo from '../../components/Logo/Logo';
 import Search from './components/Search/Search';
 import FilmInfo from './components/FilmInfo/FilmInfo';
 
-class Header extends PureComponent {
+export class Header extends PureComponent {
   
   render(){
     const page = 'info';

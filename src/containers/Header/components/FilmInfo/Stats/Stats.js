@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Stats.less';
 
-const stats = (props) => {
+const stats = props => {
   return (
     <div className={classes.Stats}>
       <span>{props.year}</span>
