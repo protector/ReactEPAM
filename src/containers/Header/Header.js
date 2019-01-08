@@ -16,6 +16,6 @@ class Header extends PureComponent {
     );
   }
 }
-<Search />
+//<Search />
 
 export default Header;

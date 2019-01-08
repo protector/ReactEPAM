@@ -1,0 +1,12 @@
+@import '../../../../index.less';
+@profitable-width: calc(100% - 300px);
+.Item {
+  width: calc(@profitable-width / 3);
+  margin: 50px;
+  float: left;
+
+  & > div + div {
+    width: @image-width;
+    margin: 0px auto;
+  }
+}

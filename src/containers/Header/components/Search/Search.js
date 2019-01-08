@@ -20,8 +20,3 @@ const search = (props) => {
 };
 
 export default search;
-//Resultbar kidolgozás
-//Alternatív Header kidolgozás
-//Footer kidolgozás
-//Content kidolgozás
-//Jest mindenhez
